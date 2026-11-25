@@ -2,37 +2,37 @@
 class Airband < Formula
   desc "Tower and command-line tool that put your coding agents on one channel"
   homepage "https://airband.dev"
-  version "0.8.0"
+  version "0.9.5"
   license "Apache-2.0"
 
   # The same binaries as below, laid out as bottles. Homebrew installs a bottle without asking for a compiler
   # or up-to-date developer tools. The macOS ones are named for the oldest macOS they run on; newer ones use them.
   bottle do
-    root_url "https://airband.dev/releases/0.8.0"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur: "d9073066b17e78bd7178c0e08f96ac30562ac332f2b786ce06915c6a526ef100"
-    sha256 cellar: :any_skip_relocation, big_sur:       "d7b48a1add10a8805a00aa375786bd3798ab2fc24f59db7bb9d37fa5c69c4bdf"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "9a6cc502c798a1984a751cec7a9795d15b5352c6d7f9d339915aa5d09ef6aced"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "626af7e64a1ee95e4b41d7c1e7cfc3045dc389ed337c117775bd885c79a2bdb6"
+    root_url "https://airband.dev/releases/0.9.5"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "a88bad4cb9f885862d328fa31caaef1e6b69748b2f4919018a7b8b379775587d"
+    sha256 cellar: :any_skip_relocation, big_sur:       "0f30e47315af71762203ef821aa18fa37cc587c2361c6d353a0171f46ea66fed"
+    sha256 cellar: :any_skip_relocation, arm64_linux:   "07591b18cf5dca3fb81cb408bbafd93497346752c59576a77724e9524e4906be"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5198e33c55a00e4c7b5d039d86682223aac52b51f216d19bf59947478ad109ae"
   end
 
   on_macos do
     on_arm do
-      url "https://airband.dev/releases/0.8.0/airband-0.8.0-aarch64-apple-darwin.tar.gz"
-      sha256 "be7a7e5263138ff01ca4c9a4d45213fcd6a91aaf8b15c6f475b65e60320c5cc7"
+      url "https://airband.dev/releases/0.9.5/airband-0.9.5-aarch64-apple-darwin.tar.gz"
+      sha256 "70085458e8fdac05136adb2e00f22f7c1adc5dc7c9c04ed35f3013f25b24510b"
     end
     on_intel do
-      url "https://airband.dev/releases/0.8.0/airband-0.8.0-x86_64-apple-darwin.tar.gz"
-      sha256 "75dea5bd2b58b41481e2badc75a4b701e540f6f9d4f347556e285087993dce54"
+      url "https://airband.dev/releases/0.9.5/airband-0.9.5-x86_64-apple-darwin.tar.gz"
+      sha256 "e72618ca8d52ef23ec3cc57a3dd20db3bd52da244a80409f736285eccf464b3f"
     end
   end
   on_linux do
     on_arm do
-      url "https://airband.dev/releases/0.8.0/airband-0.8.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ca8c31b1391566402c9850b3eb3faf73d3d331bec545e8c1842ba04b338e254a"
+      url "https://airband.dev/releases/0.9.5/airband-0.9.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "42c411570f2231f0652c91f154ac866ad6cde6acb1e9a35d6b0f95496c02bf88"
     end
     on_intel do
-      url "https://airband.dev/releases/0.8.0/airband-0.8.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "6cb2846bfb22ecd5642c3622681e840c8db37d5469d06a3f46711a12097b5ad0"
+      url "https://airband.dev/releases/0.9.5/airband-0.9.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5b44a6d9a5e09fddb6c92b7d04e3872a1c24f26bbfb2b87bacf4428a27813a23"
     end
   end
 
